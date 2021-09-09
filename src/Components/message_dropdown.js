@@ -1,13 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import undraw_profile_1 from "../Components/img/undraw_profile_1.svg";
+import undraw_profile_2 from "../Components/img/undraw_profile_2.svg";
+import undraw_profile_3 from "../Components/img/undraw_profile_3.svg";
 // this is the message dropdown component of the topbar still has to be optimized
 function MessageDropDown() {
   return (
     <li className="nav-item dropdown no-arrow mx-1">
       <a
         className="nav-link dropdown-toggle"
-        as={Link}
-        to="#"
+        href="/#"
         id="messagesDropdown"
         role="button"
         data-toggle="dropdown"
@@ -24,13 +25,9 @@ function MessageDropDown() {
         aria-labelledby="messagesDropdown"
       >
         <h6 className="dropdown-header">Message Center</h6>
-        <a className="dropdown-item d-flex align-items-center" as={Link} to="#">
+        <a className="dropdown-item d-flex align-items-center" href="/#">
           <div className="dropdown-list-image mr-3">
-            <img
-              className="rounded-circle"
-              src="../../../public/img/undraw_profile_1.svg"
-              alt="..."
-            />
+            <img className="rounded-circle" src={undraw_profile_1} alt="..." />
             <div className="status-indicator bg-success"></div>
           </div>
           <div className="font-weight-bold">
@@ -41,13 +38,9 @@ function MessageDropDown() {
             <div className="small text-gray-500">Emily Fowler · 58m</div>
           </div>
         </a>
-        <a className="dropdown-item d-flex align-items-center" as={Link} to="#">
+        <a className="dropdown-item d-flex align-items-center" href="/#">
           <div className="dropdown-list-image mr-3">
-            <img
-              className="rounded-circle"
-              src="img/undraw_profile_2.svg"
-              alt="..."
-            />
+            <img className="rounded-circle" src={undraw_profile_2} alt="..." />
             <div className="status-indicator"></div>
           </div>
           <div>
@@ -58,13 +51,9 @@ function MessageDropDown() {
             <div className="small text-gray-500">Jae Chun · 1d</div>
           </div>
         </a>
-        <a className="dropdown-item d-flex align-items-center" as={Link} to="#">
+        <a className="dropdown-item d-flex align-items-center" href="/#">
           <div className="dropdown-list-image mr-3">
-            <img
-              className="rounded-circle"
-              src="img/undraw_profile_3.svg"
-              alt="..."
-            />
+            <img className="rounded-circle" src={undraw_profile_3} alt="..." />
             <div className="status-indicator bg-warning"></div>
           </div>
           <div>
@@ -75,7 +64,7 @@ function MessageDropDown() {
             <div className="small text-gray-500">Morgan Alvarez · 2d</div>
           </div>
         </a>
-        <a className="dropdown-item d-flex align-items-center" as={Link} to="#">
+        <a className="dropdown-item d-flex align-items-center" href="/#">
           <div className="dropdown-list-image mr-3">
             <img
               className="rounded-circle"
@@ -92,7 +81,7 @@ function MessageDropDown() {
             <div className="small text-gray-500">Chicken the Dog · 2w</div>
           </div>
         </a>
-        <a className="dropdown-item text-center small text-gray-500" as={Link} to="#">
+        <a className="dropdown-item text-center small text-gray-500" href="/#">
           Read More Messages
         </a>
       </div>

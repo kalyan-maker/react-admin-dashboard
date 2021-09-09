@@ -1,13 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 function CollapseMenuItem() {
   return (
     <li className="nav-item">
       <a
         className="nav-link collapsed"
-        as={Link}
-        to="#"
+        href="/#"
         data-toggle="collapse"
         data-target="#collapseUtilities"
         aria-expanded="true"

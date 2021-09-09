@@ -1,6 +1,6 @@
 import React from "react";
 import CardHeading from "./card_heading";
-import { Link } from "react-router-dom";
+import undraw_posting_photo from "../Components/img/undraw_posting_photo.svg";
 
 // Illustrations component
 function Illustrations() {
@@ -12,19 +12,23 @@ function Illustrations() {
           <img
             className="img-fluid px-3 px-sm-4 mt-3 mb-4"
             style={{ width: "25rem" }}
-            src="img/undraw_posting_photo.svg"
+            src={undraw_posting_photo}
             alt="..."
           />
         </div>
         <p>
           Add some quality, svg illustrations to your project courtesy of{" "}
-          <a target="_blank" rel="nofollow" as={Link} to="https://undraw.co/">
+          <a
+            href="https://undraw.co/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             unDraw
           </a>
           , a constantly updated collection of beautiful svg images that you can
           use completely free and without attribution!
         </p>
-        <a target="_blank" rel="nofollow" as={Link} to="https://undraw.co/">
+        <a href="https://undraw.co/" target="_blank" rel="noopener noreferrer">
           Browse Illustrations on unDraw &rarr;
         </a>
       </div>

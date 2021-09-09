@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 // this dropdown conponent is planned and used for all the dropdowns displayed on output
 // from chart means the dropdown is called from the chart component and has renders specific to it
@@ -13,8 +12,7 @@ function DropDown({ dropMenu, fromChart }) {
       {fromChart ? (
         <a
           className="dropdown-toggle"
-          as={Link}
-          to="#"
+          href="/#"
           role="button"
           id="dropdownMenuLink"
           data-toggle="dropdown"
@@ -43,7 +41,7 @@ function DropDown({ dropMenu, fromChart }) {
                 {head}
               </div>
               {subHeads.map(({ name, link }) =>
-                name == "*****" ? (
+                name === "*****" ? (
                   <div className="dropdown-divider" />
                 ) : (
                   <a

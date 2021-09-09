@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 // logout modal component
 function LogoutModal() {
   return (
@@ -37,7 +36,7 @@ function LogoutModal() {
             >
               Cancel
             </button>
-            <a className="btn btn-primary" as={Link} to="login.html">
+            <a className="btn btn-primary" href="/login.html">
               Logout
             </a>
           </div>

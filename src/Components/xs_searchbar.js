@@ -1,13 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 // this search bar appears only on the xs screen size
 const XsSearch = () => {
   return (
     <li className="nav-item dropdown no-arrow d-sm-none">
       <a
         className="nav-link dropdown-toggle"
-        as={Link}
-        to="/#"
+        href="/#"
         id="searchDropdown"
         role="button"
         data-toggle="dropdown"

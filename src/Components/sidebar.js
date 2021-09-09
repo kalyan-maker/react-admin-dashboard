@@ -6,8 +6,6 @@ import {
 } from "./sidebarDropdata";
 import DropDown from "./dropdown";
 
-import { Link } from "react-router-dom";
-
 // this component is the blue color side bar appearing on the page
 function Sidebar() {
   return (
@@ -20,8 +18,7 @@ function Sidebar() {
         {/* <!-- Sidebar - Brand --> */}
         <a
           className="sidebar-brand d-flex align-items-center justify-content-center"
-          as={Link}
-          to="index.html"
+          href="/index.html"
         >
           <div className="sidebar-brand-icon rotate-n-15">
             <i className="fas fa-laugh-wink"></i>
@@ -36,7 +33,7 @@ function Sidebar() {
 
         {/* <!-- Nav Item - Dashboard --> */}
         <li className="nav-item active">
-          <a className="nav-link" as={Link} to="index.html">
+          <a className="nav-link" href="/index.html">
             <i className="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span>
           </a>
@@ -52,8 +49,7 @@ function Sidebar() {
         <li className="nav-item">
           <a
             className="nav-link collapsed"
-            as={Link}
-            to="#"
+            href="/#"
             data-toggle="collapse"
             data-target="#collapseTwo"
             aria-expanded="true"
@@ -76,7 +72,7 @@ function Sidebar() {
         <li className="nav-item">
           <a
             className="nav-link collapsed"
-            Link="#"
+            href="/#"
             data-toggle="collapse"
             data-target="#collapseUtilities"
             aria-expanded="true"
@@ -105,8 +101,7 @@ function Sidebar() {
         <li className="nav-item">
           <a
             className="nav-link collapsed"
-            as={Link}
-            to="#"
+            href="/#"
             data-toggle="collapse"
             data-target="#collapsePages"
             aria-expanded="true"
@@ -127,7 +122,7 @@ function Sidebar() {
 
         {/* <!-- Nav Item - Charts --> */}
         <li className="nav-item">
-          <a className="nav-link" as={Link} to="charts.html">
+          <a className="nav-link" href="/charts.html">
             <i className="fas fa-fw fa-chart-area"></i>
             <span>Charts</span>
           </a>
@@ -135,7 +130,7 @@ function Sidebar() {
 
         {/* <!-- Nav Item - Tables --> */}
         <li className="nav-item">
-          <a className="nav-link" as={Link} to="tables.html">
+          <a className="nav-link" href="/tables.html">
             <i className="fas fa-fw fa-table"></i>
             <span>Tables</span>
           </a>
@@ -165,8 +160,7 @@ function Sidebar() {
           </p>
           <a
             className="btn btn-success btn-sm"
-            as={Link}
-            to="https://startbootstrap.com/theme/sb-admin-pro"
+            href="https://startbootstrap.com/theme/sb-admin-pro"
           >
             Upgrade to Pro!
           </a>

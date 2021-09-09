@@ -1,13 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 // this is the alert box in the topbar still has to be optimized
 function AlertDropDown() {
   return (
     <li className="nav-item dropdown no-arrow mx-1">
       <a
         className="nav-link dropdown-toggle"
-        as={Link}
-        to="#"
+        href="/#"
         id="alertsDropdown"
         role="button"
         data-toggle="dropdown"
@@ -24,7 +23,7 @@ function AlertDropDown() {
         aria-labelledby="alertsDropdown"
       >
         <h6 className="dropdown-header">Alerts Center</h6>
-        <a className="dropdown-item d-flex align-items-center" as={Link} to="#">
+        <a className="dropdown-item d-flex align-items-center" href="/#">
           <div className="mr-3">
             <div className="icon-circle bg-primary">
               <i className="fas fa-file-alt text-white"></i>
@@ -37,7 +36,7 @@ function AlertDropDown() {
             </span>
           </div>
         </a>
-        <a className="dropdown-item d-flex align-items-center" as={Link} to="#">
+        <a className="dropdown-item d-flex align-items-center" href="/#">
           <div className="mr-3">
             <div className="icon-circle bg-success">
               <i className="fas fa-donate text-white"></i>
@@ -48,7 +47,7 @@ function AlertDropDown() {
             $290.29 has been deposited into your account!
           </div>
         </a>
-        <a className="dropdown-item d-flex align-items-center" as={Link} to="#">
+        <a className="dropdown-item d-flex align-items-center" href="/#">
           <div className="mr-3">
             <div className="icon-circle bg-warning">
               <i className="fas fa-exclamation-triangle text-white"></i>
@@ -60,11 +59,7 @@ function AlertDropDown() {
             account.
           </div>
         </a>
-        <a
-          className="dropdown-item text-center small text-gray-500"
-          as={Link}
-          to="#"
-        >
+        <a className="dropdown-item text-center small text-gray-500" href="/#">
           Show All Alerts
         </a>
       </div>

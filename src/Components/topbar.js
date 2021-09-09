@@ -1,7 +1,7 @@
 import React from "react";
+import undraw_profile from "../Components/img/undraw_profile.svg";
 import SearchBar from "./searchbar";
 import XsSearch from "./xs_searchbar";
-import { Link } from "react-router-dom";
 import AlertDropDown from "./alertDropdown";
 import MessageDropDown from "./message_dropdown";
 
@@ -33,8 +33,7 @@ function TopBar() {
           <li className="nav-item dropdown no-arrow">
             <a
               className="nav-link dropdown-toggle"
-              as={Link}
-              to="#"
+              href="#top"
               id="userDropdown"
               role="button"
               data-toggle="dropdown"
@@ -45,8 +44,9 @@ function TopBar() {
                 Douglas McGee
               </span>
               <img
+                alt=""
                 className="img-profile rounded-circle"
-                src="img/undraw_profile.svg"
+                src={undraw_profile}
               />
             </a>
             {/* <!-- Dropdown - User Information --> */}
@@ -54,23 +54,22 @@ function TopBar() {
               className="dropdown-menu dropdown-menu-right shadow animated--grow-in"
               aria-labelledby="userDropdown"
             >
-              <a className="dropdown-item" as={Link} to="#">
+              <a className="dropdown-item" href="#top">
                 <i className="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                 Profile
               </a>
-              <a className="dropdown-item" as={Link} to="#">
+              <a className="dropdown-item" href="#top">
                 <i className="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                 Settings
               </a>
-              <a className="dropdown-item" as={Link} to="#">
+              <a className="dropdown-item" href="#top">
                 <i className="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
                 Activity Log
               </a>
               <div className="dropdown-divider"></div>
               <a
                 className="dropdown-item"
-                as={Link}
-                to="#"
+                href="#top"
                 data-toggle="modal"
                 data-target="#logoutModal"
               >
